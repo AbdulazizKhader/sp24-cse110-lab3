@@ -9,14 +9,18 @@
   </head>
   <body>
     <h1 class="title">CSE 110 Meeting Notes</h1>
+    <audio controls>
+        <source src="Free_Test_Data_1OMB_MP3.mp3">
+    </audio>
     <h2>04/16/2024</h2>
     <nav>
         <a href="https://canvas.ucsd.edu/courses/54609">Class Site for all the Lectures</a>   
     </nav>
     <div class="nav">
         <a href="#Tuesday">Tuesday</a>
-        <a href="#FinalNotes">Final Notes</a>
+        <a href="#Notes">Project Notes</a>
     </div>
+    <img src="screenshots/CSE110Logo.png" alt="CSE110Logo" width="700">    
     <hr>
     <header>
         <p> 
@@ -42,25 +46,99 @@
     <section id="Tuesday">
         <h2>Tuesday</h2>
             <h3>The Project Reveal!</h3>
-            <p>This lecture we learned what the project is about: <strong>CRUD Apps!</strong> </p>
+            <p>
+                This lecture we learned what the project is about: <strong>CRUD Apps!</strong> 
+                More specifically, the overarching project is to create a journal/diary of what you did as a software engineer. Kinda like a timeline of events.
+            </p>
                 <ul>
-                    <li>This seems as an <em>interesting</em> choice. It stands for: 
+                    <li>This seems as an <em>interesting</em> choice, and using a seemingly simple project to teach the idea of a CRUD app initially doesn't sound as the right way to do it. CRUD stands for: 
                         <ol>
-                            <li><b>Create</b></li>
-                            <li><b>Read</b></li>
-                            <li><b>Update</b></li>
-                            <li><b>Delete</b></li>
+                            <li><b>C</b>reate</li>
+                            <li><b>R</b>ead</li>
+                            <li><b>U</b>pdate</li>
+                            <li><b>D</b>elete</li>
                         </ol>
                     </li>
-                    <li>Because almost all apps are CRUD Apps, this means we have to figure out a way to make it work for us as a team <i>and</i> make it stand out.</li>
+                    <br>
+                    <li>Because almost all apps are CRUD apps, this means that we already know what a CRUD app essentialy should do, and we to figure out a way to make it work for us as a team <em><i>as well as</i></em> make it stand out.</li>
                 </ul>
     </section>
-    <footer>This is a footer.</footer>
     <hr>
-    <section id="FinalNotes">
-        <h2>Final Thoughts</h2>
+    <section id="Notes">
+        <h2>Project Notes</h2>
+        <h3>Ideas for the project:</h3>
+        <video width="300" controls>
+            <source src="Shorts.mp4">
+        </video>
+        <p>
+            This is a video I found about some things we can take and use after we finish making a functioning calendar.
+            <details>
+                <summary>Suggestions:</summary>
+                The more important things we can add are color-codings and email notifications to increase the functionality of the calendar.
+            </details>
+        </p>
+        <p>
+            This is more of a section to have fun with forms and buttons. So enjoy!
+            <form>
+                <label>First Name:</label><br>
+                <input type="text"><br>
+                <label>Last Name:</label><br>
+                <input type="text"><br>
+                <label>Date:</label><br>
+                <input type="date"><br>
+                <label>Age:</label><br>
+
+                <input type="radio" id="010">
+                <label for="010">0-10</label><br>
+                <input type="radio" id="1020">
+                <label for="1020">10-20</label><br>
+                <input type="radio" id="2035">
+                <label for="2035">20-35</label><br>
+                <input type="radio" id="35+">
+                <label for="35+">35+</label><br>
+
+                <fieldset>
+                    <legend>Which meals are the best?</legend>
+                    <input type="checkbox" id="breakfast">
+                    <label for="breakfast">Breakfast</label>
+                    <input type="checkbox" id="breakfast">
+                    <label for="breakfast">Brunch</label>
+                    <input type="checkbox" id="lunch">
+                    <label for="lunch">Lunch</label>
+                    <input type="checkbox" id="dinner">
+                    <label for="dinner">Dinner</label>
+                    <input type="checkbox" id="linner">
+                    <label for="linner">Lunch-Dinner</label><br>
+                </fieldset><br> 
+
+                <label>For the above question, tell us what is your favorite dish for each choice you picked:</label>
+                <textarea rows="6" cols="55">My favorite meal is Mansaf. Pls go check it out!</textarea><br>                   
+                <label>Choose your favorite ice cream flavor:</label>
+                <input list="iceCreamFlavors">
+                <datalist id="iceCreamFlavors">
+                    <option value="Chocolate"></option>
+                    <option value="Vanilla"></option>
+                    <option value="Rocky Road"></option>
+                    <option value="Cookies & Cream"></option>
+                    <option value="Cotton Candy"></option>
+                </datalist><br>
+                <label>Choose your favorite fruit:</label>
+                <select id="fruit">
+                    <option value="mango">Mango</option>
+                    <option value="raspberry">Raspberry</option>
+                    <option value="blackberry">Blackberry</option>
+                    <option value="orange">Orange</option>
+                  </select>
+                  <br><br>
+                  <button type="button" onclick="alert('Have a good day!')">Click me!</button>
+                <input type="submit">
+            </form>   
+        </p>
     </section>
-    <h3>This is a third head</h3>
-    <section>This is a section</section>
+    <hr>
+    <footer>
+        Author of this webpage: Abdulaziz Khader. <br>
+        Contact: akhader@ucsd.edu
+    </footer>
   </body>
 </html>
