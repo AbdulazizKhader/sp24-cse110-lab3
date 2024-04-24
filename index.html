@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <meta content="This website is for taking notes on the CSE 110 Lectures."> -->
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sedan:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my_stylesheet.css">
     <title>CSE 110 Meeting Notes</title>
   </head>
   <body>
@@ -22,32 +26,34 @@
     </div>
     <img src="screenshots/CSE110Logo.png" alt="CSE110Logo" width="700">    
     <hr>
-    <header>
-        <p> 
-            This website is made to take notes for the <span style="color:red">CSE 110 Meetings</span> we have this week.
-            Attendance for the day:
-        </p>
-    </header>
-    <ul>
-        <li>Abdulaziz Khader - <span style="color:turquoise">Yours truly</span></li>
-        <li>Peter Yoon</li>
-        <li>Kane Li</li>
-        <li>Avi Kukreja</li>
-        <li>Stefan Gadient</li>
-        <li>Sierra Myers</li>
-        <li>Yijie He</li>
-        <li>Yuehua Xi</li>
-        <li>Luca</li>
-        <li>Diego Marquez</li>
-        <li>Michael</li>
-        <li>Dhruv Patravali</li>
-    </ul>
-    <hr>
+    <section id="StartOfPage">
+        <header>    
+            <p class="paragraphs"> 
+                This website is made to take notes for the <span style="color:red">CSE 110 Meetings</span> we have this week.
+                Attendance for the day:
+            </p>
+        </header>
+        <ul id="nameslist">
+            <li>Abdulaziz Khader - <span style="color:turquoise">Yours truly</span></li>
+            <li>Peter Yoon</li>
+            <li>Kane Li</li>
+            <li>Avi Kukreja</li>
+            <li>Stefan Gadient</li>
+            <li>Sierra Myers</li>
+            <li>Yijie He</li>
+            <li>Yuehua Xi</li>
+            <li>Luca</li>
+            <li>Diego Marquez</li>
+            <li>Michael</li>
+            <li>Dhruv Patravali</li>
+        </ul>
+        <hr>
+    </section>
     <section id="Tuesday">
         <h2>Tuesday</h2>
             <h3>The Project Reveal!</h3>
-            <p>
-                This lecture we learned what the project is about: <strong>CRUD Apps!</strong> 
+            <p class="paragraphs">
+                This lecture we learned what the project is about: <strong>CRUD</strong> <b>Apps!</b>
                 More specifically, the overarching project is to create a journal/diary of what you did as a software engineer. Kinda like a timeline of events.
             </p>
                 <ul>
@@ -69,7 +75,7 @@
         <video width="300" controls>
             <source src="Shorts.mp4">
         </video>
-        <p>
+        <p class="paragraphs">
             This is a video I found about some things we can take and use after we finish making a functioning calendar.
         </p>    
             <details>
@@ -77,43 +83,66 @@
                 The more important things we can add are color-codings and email notifications to increase the functionality of the calendar.
             </details>
         <hr>    
-        <p>
+        <p class="paragraphs">
             This is more of a section to have fun with forms and buttons. So enjoy!
         </p>  
         <form>
-            <label>First Name:</label><br>
+            <label id="names">First Name:</label>
             <input type="text"><br>
-            <label>Last Name:</label><br>
+            <label id="names">Last Name:</label>
             <input type="text"><br>
-            <label>Date:</label><br>
+            <label>Date:</label>
             <input type="date"><br>
-            <label>Age:</label><br>
+            <label>Age:</label>
 
-            <input type="radio" id="010">
-            <label for="010">0-10</label><br>
-            <input type="radio" id="1020">
-            <label for="1020">10-20</label><br>
-            <input type="radio" id="2035">
-            <label for="2035">20-35</label><br>
-            <input type="radio" id="35+">
-            <label for="35+">35+</label><br>
+            <section>
+                <div class="alignment">
+                    <input type="radio" id="ages" name="box-shadow">
+                    <label id="radiolabel" for="box-shadow">
+                        0-10
+                    </label>
+                </div>
+                
+                <div class="alignment">
+                    <input type="radio" id="ages" name="box-shadow">
+                    <label id="radiolabel" for="box-shadow">
+                        10-20
+                    </label>
+                </div>
+                
+                <div class="alignment">
+                    <input type="radio" id="ages" name="box-shadow">
+                    <label id="radiolabel" for="box-shadow">
+                        20-35
+                    </label>
+                </div>
+                
+                <div class="alignment">
+                    <input type="radio" id="ages" name="box-shadow">
+                    <label id="radiolabel" for="box-shadow">
+                        35+
+                    </label>
+                </div>
+                
+            </section><br>
 
             <fieldset>
                 <legend>Which meals are the best?</legend>
                 <input type="checkbox" id="breakfast">
-                <label for="breakfast">Breakfast</label>
+                <label id="checklabel" for="breakfast">Breakfast</label>
                 <input type="checkbox" id="brunch">
-                <label for="brunch">Brunch</label>
+                <label id="checklabel" for="brunch">Brunch</label>
                 <input type="checkbox" id="lunch">
-                <label for="lunch">Lunch</label>
+                <label id="checklabel" for="lunch">Lunch</label>
                 <input type="checkbox" id="dinner">
-                <label for="dinner">Dinner</label>
+                <label id="checklabel" for="dinner">Dinner</label>
                 <input type="checkbox" id="linner">
-                <label for="linner">Lunch-Dinner</label><br>
+                <label id="checklabel" for="linner">Lunch-Dinner</label>
             </fieldset><br> 
 
             <label>For the above question, tell us what is your favorite dish for each choice you picked:</label>
             <textarea rows="6" cols="55">My favorite meal is Mansaf. Pls go check it out!</textarea><br>                   
+            
             <label>Choose your favorite ice cream flavor:</label>
             <input list="iceCreamFlavors">
             <datalist id="iceCreamFlavors">
@@ -123,6 +152,7 @@
                 <option value="Cookies & Cream"></option>
                 <option value="Cotton Candy"></option>
             </datalist><br>
+
             <label>Choose your favorite fruit:</label>
             <select id="fruit">
                 <option value="mango">Mango</option>
@@ -130,9 +160,9 @@
                 <option value="blackberry">Blackberry</option>
                 <option value="orange">Orange</option>
                 </select>
-                <br><br>
-                <button type="button" onclick="alert('Have a good day!')">Click me!</button>
-            <input type="submit">
+                <br>
+                <button class="buttonclass" type="button" onclick="alert('Have a good day!')">Click me!</button>
+            <button class="buttonclass" type="submit">Submit</button>
         </form>   
     </section>
     <hr>

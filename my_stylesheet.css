@@ -1,0 +1,156 @@
+/*
+ * This file is to style the index.html file
+ */
+ 
+/*Creating a background for the page*/
+body{
+    background-color: aliceblue;
+    font-size: 17px;
+
+    --radio-outline-color: rgb(33, 33, 238);
+    --radio-checkec-color: #e8e8e8;
+}
+
+/* enforcing the emphasis on text*/
+strong {
+    color: rgb(255,0,0);
+}
+b{
+    color: black;
+}
+
+/*Changing style of fieldset*/
+legend{
+    background-color: #000360;
+    color: hsl(0, 100%, 100%);
+    border-radius: 20pt;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 10px;
+    justify-content: start;
+    background-color: color-mix(in srgb, skyblue 75%,  darkblue);
+}
+input[type=checkbox]{
+    width: 1.5rem; 
+    height: 1.25rem;
+    max-width: 2cm;
+    max-height: 1cm;
+}
+label[id=checklabel]{
+    text-align: left;
+    align-content: center;
+}
+label[id=checklabel]::before{
+    content: " ";
+}
+
+/*Changing input style while typing*/
+#names{
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=text]{
+    box-sizing: border-box;
+    border: 2px solid #60809c;
+    font-size: 15px;
+    width: 130px;
+    transition: width 0.2s ease-in-out;
+}
+
+input[type=text]:focus {
+    background-color: rgb(225, 222, 222);
+    width: 70%;
+}
+
+
+/*Underlining the names of the team*/
+ul[id=nameslist]{
+    text-decoration: underline;
+}
+
+/*Changing the large text area style*/
+textarea{
+    position: relative;
+    background-color: rgb(220, 255, 254);
+}
+
+/* Creating a custom class for the text */
+.paragraphs{
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;    
+    color:rgb(0, 0, 0);
+}
+
+/* Setting all unordered lists to have a slightly darker background */
+ul *{
+    background-color: rgb(225, 242, 251);
+}
+
+/* Changing the style of the radio buttons by making an alignment class */
+.alignment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.alignment input{
+    margin-left: 5px;
+    width: 50px;
+    height: 20px;
+}
+.alignment label{
+    width: 100%;
+    padding: 8px;
+}
+
+
+
+/* Custom class to make the buttons better */
+.buttonclass{
+    width: 10em;
+    height: 5ex;
+    background-color: rgb(239, 253, 255);
+    border-width: 2px; 
+    border-style: solid;
+    border-color: rgb(34, 113, 178);
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.buttonclass:hover {
+    background-color: rgb(196, 243, 255);
+    transition: background-color 0.3s;
+}
+.buttonclass:active{
+    box-shadow: 2px 2px 5px #4a6467;
+}
+
+/* Rearranging the structure of the form itself */
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+
+
+/* Making the image scale with respect to the size of the browser*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+form > select{
+    font-size: large;
+}
+
+details + summary{
+    border: 2px solid #4a6467;
+}
+
+
+
+
+
