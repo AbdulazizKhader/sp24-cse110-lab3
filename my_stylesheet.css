@@ -142,15 +142,32 @@ img{
     height: auto;
 }
 
+/* Making the select bar show the options as large */
 form > select{
     font-size: large;
 }
 
-details + summary{
-    border: 2px solid #4a6467;
+/* Making the video that comes after h3 have a border */
+h3 + video{
+    border: 8px solid #4a6467;
+    border-radius: 10%;
 }
 
+/* Make all instances of the second argument, h3, which come after the first
+ * h2 have the following attributes:
+ */
+h2 ~ h3{
+    text-decoration: underline;
+}
 
+/* Adding a border to the details */
+summary{
+    & + p{
+        border: 3px solid #4a6467;
+        margin-right: 2px; 
+        justify-content: center;
+    }
+}
 
 
 
