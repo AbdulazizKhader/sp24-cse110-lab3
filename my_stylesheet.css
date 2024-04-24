@@ -8,7 +8,7 @@ body{
     font-size: 17px;
 
     --radio-outline-color: rgb(33, 33, 238);
-    --radio-checkec-color: #e8e8e8;
+    --radio-checkec-color: #0a0656;
 }
 
 /* enforcing the emphasis on text*/
@@ -98,13 +98,13 @@ ul *{
     margin-left: 5px;
     width: 50px;
     height: 20px;
+    color: var(--radio-outline-color);
 }
 .alignment label{
     width: 100%;
     padding: 8px;
+    color: var(--radio-checkec-color);
 }
-
-
 
 /* Custom class to make the buttons better */
 .buttonclass{
@@ -135,7 +135,11 @@ form{
     align-content:flex-start;
 }
 
-
+/* Making a border for the audio */
+audio{
+    border: 3px solid #4a6467;
+    border-radius: 35%;
+}
 /* Making the image scale with respect to the size of the browser*/
 img{
     max-width: 100%;
